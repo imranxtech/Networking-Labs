@@ -1,0 +1,15 @@
+!
+hostname MUX-GW01
+!
+interface Loopback0
+ ip address 10.6.6.1 255.255.255.0
+!
+interface Ethernet0/0
+ ip address 192.168.4.100 255.255.255.0
+!
+interface Ethernet0/3
+ ip address 172.16.6.2 255.255.255.252
+!
+ip route 0.0.0.0 0.0.0.0 172.16.6.1
+!
+end

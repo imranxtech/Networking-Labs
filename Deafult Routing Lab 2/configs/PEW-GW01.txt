@@ -1,0 +1,15 @@
+!
+hostname PEW-GW01
+!
+interface Loopback0
+ ip address 10.4.4.1 255.255.255.0
+!
+interface Ethernet0/0
+ ip address 192.168.2.100 255.255.255.0
+!
+interface Ethernet0/2
+ ip address 172.16.4.2 255.255.255.252
+!
+ip route 0.0.0.0 0.0.0.0 172.16.4.1
+!
+end
